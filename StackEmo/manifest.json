@@ -1,0 +1,14 @@
+{
+	"manifest_version":2,
+	"name": "StackEmo",
+	"description": "Augment StackOverflow with Emotions",
+	"version": "1.0",
+
+	// "permissions": ["https://sleepy-taiga-14192.herokuapp.com/*"],
+
+	"content_scripts": [{
+		"matches" : ["https://stackoverflow.com/questions/*/*"],
+		"css": ["css/style.css"],
+		"js": ["js/jquery-3.3.1.min.js", "stackEmo.js"]
+	}]
+}
